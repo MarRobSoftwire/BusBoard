@@ -21,8 +21,7 @@ namespace BusBoard
                 .DeserializeObject<List<Bus>>(response.Content)
                 .OrderBy((bus) => bus.TimeToStation)
                 .Take(5)
-                .ToList()
-                .Select(bus => );
+                .ToList();
         }
     }
 }
